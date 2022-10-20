@@ -12,10 +12,10 @@
 
   <body>
 
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon sticky-top">
   <div class="container-fluid">
     <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "http://res.cloudinary.com/deppfdq2x/image/upload/v1666275922/PHOTO-2021-12-10-08-00-05_ieikg4.jpg" %>
+      <%= image_tag "https://res.cloudinary.com/deppfdq2x/image/upload/v1666275658/PHOTO-2021-12-10-08-00-05_ieikg4.jpg" %>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
             <%= link_to "Messages", "#", class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
-            <i class="fa-light fa-person-dress"></i>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Action", "#", class: "dropdown-item" %>
               <%= link_to "Another action", "#", class: "dropdown-item" %>
@@ -51,5 +51,17 @@
 
 
     <%= yield %>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="https://www.instagram.com/maga.prendasconhistorias/"><i class="fab fa-instagram"></i></a>
+      <%# <a href="#"><i class="fab fa-facebook"></i></a> %>
+      <a href="https://wa.me/59175011219"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <div class="footer-copyright">
+    MAGA | Prendas con historias
+  </div>
+</div>
+
   </body>
 </html>

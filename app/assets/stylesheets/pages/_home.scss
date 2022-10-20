@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+h1{
+  font-family: $headers-font;
+  color: $dark-green;
+}
+
+p{
+  font-family: $body-font;
+  color: $black;
+}
+
+body {
+  background-color: $fondo;
+}
